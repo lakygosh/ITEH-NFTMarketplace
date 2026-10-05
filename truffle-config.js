@@ -17,7 +17,7 @@ module.exports = {
         provider: () => {
           return new HDWalletProvider({
             privateKeys: [process.env.PRIVATE_WALLET_KEY],
-            provider: `https://sepolia.infura.io/v3/e5dae1df891e488788b9681994b7f6fa`
+            provider: `https://sepolia.infura.io/v3/${process.env.INFURA_PROJECT_ID}`
           });
         },
           network_id: 11155111,
@@ -31,7 +31,7 @@ module.exports = {
         provider: () => {
           return new HDWalletProvider({
             privateKeys: [process.env.PRIVATE_WALLET_KEY],
-            provider: `https://goerli.infura.io/v3/e5dae1df891e488788b9681994b7f6fa`
+            provider: `https://goerli.infura.io/v3/${process.env.INFURA_PROJECT_ID}`
           });
         },
           network_id: 5,

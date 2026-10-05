@@ -90,10 +90,9 @@ Create a `.env` file in the project root (it is git-ignored):
 | Variable | Used by | Purpose |
 |---|---|---|
 | `PRIVATE_WALLET_KEY` | `truffle-config.js` | Deployer key for the Sepolia / Goerli networks |
+| `INFURA_PROJECT_ID` | `truffle-config.js` | Infura project ID for the Sepolia / Goerli RPC endpoints |
 | `REACT_APP_PINATA_KEY` | `src/pinata.js` | Pinata API key |
 | `REACT_APP_PINATA_SECRET` | `src/pinata.js` | Pinata API secret |
-
-> `src/pinata.js` reads the Pinata variables but still passes inline credentials to the API calls. Swap those for `key` / `secret` before using your own account.
 
 ### Deploy the contract
 

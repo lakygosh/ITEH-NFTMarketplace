@@ -3,7 +3,7 @@ import { setGlobalState, truncate, useGlobalState } from '../store'
 const Web3 = require('web3');
 
 const imgLanding = "https://www.usatoday.com/gcdn/-mm-/2f6a179195a35bd5207a5e4f64cc5fac05773f98/c=255-0-2015-1320/local/-/media/2022/07/25/USATODAY/usatsports/nft-coins-tokens-getty.jpeg.jpg"
-//const web3 = new Web3(new Web3.provider.HttpProvider('https://sepolia.infura.io/v3/e5dae1df891e488788b9681994b7f6fa'));
+//const web3 = new Web3(new Web3.provider.HttpProvider('https://sepolia.infura.io/v3/<INFURA_PROJECT_ID>'));
 const Hero = () => {
 
   const [connectedAccount] = useGlobalState('connectedAccount')
